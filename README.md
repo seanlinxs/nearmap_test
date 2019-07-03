@@ -12,9 +12,22 @@
 
 ## how to run
 
+### extract
+
+```
+tar -xzf nearmap_test.tar.gz
+```
+
 ### running environment
 
 python 3.7.3, jupyter, scikit-learn, pandas, venv
+
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp /path/to/test.tar.gz ./
+```
 
 ### unit test
 
@@ -24,10 +37,14 @@ python -m doctest utils.py -v
 
 ### notebook
 
-open ```calculate_f1_of_thursdays.ipynb``` and run the kernel
+```
+jupyter-notebook
+```
+
+Then open ```calculate_f1_of_thursdays.ipynb``` and run the kernel
 
 ### python
 
 ```
-python calculate_f1_of_thursdays.ipynb
+python calculate_f1_of_thursdays.py
 ```
